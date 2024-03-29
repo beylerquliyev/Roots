@@ -10,6 +10,7 @@ function Movies() {
     }
    async function GetData(){
  try{
+    const apiUrl = 'https://www.omdbapi.com/?apikey=a407a7b3&s=yy';
     let response1=await fetch(`http://www.omdbapi.com/?apikey=a407a7b3&s=${value}`)
     let response2=await response1.json()
     Setdata(response2.Search)
